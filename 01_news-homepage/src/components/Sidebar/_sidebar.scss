@@ -1,0 +1,27 @@
+aside {
+  background: hsl(240, 100%, 5%);
+  padding: 0 1em;
+
+  div {
+    border-bottom: 1px solid hsl(36, 100%, 99%);
+    padding: 0.8em 0;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  h3 {
+    color: hsl(35, 77%, 62%);
+    font-size: 2rem;
+  }
+
+  span,
+  p {
+    color: hsl(36, 100%, 99%);
+  }
+
+  span {
+    font-weight: 700;
+  }
+}

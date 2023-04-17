@@ -1,0 +1,28 @@
+.main-preview {
+  img {
+    width: 50%;
+    height: auto;
+  }
+  .main-preview-lower {
+    display: flex;
+
+    h2 {
+      font-size: 3rem;
+    }
+    .main-preview-lower-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1em;
+
+      button {
+        background: hsl(5, 85%, 63%);
+        border: none;
+        padding: 1.2em 1.6em;
+        color: hsl(36, 100%, 99%);
+        letter-spacing: 0.3em;
+        font-weight: 700;
+      }
+    }
+  }
+}

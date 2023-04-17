@@ -1,4 +1,5 @@
 import React from "react";
+import "./_sidebar.scss";
 
 const Sidebar = ({ sidebarContent }) => {
   return (
@@ -6,7 +7,7 @@ const Sidebar = ({ sidebarContent }) => {
       <h3>New</h3>
       {sidebarContent.map((content) => (
         <div key={content.id}>
-          <h4>{content.title}</h4>
+          <span>{content.title}</span>
           <p>{content.body}</p>
         </div>
       ))}

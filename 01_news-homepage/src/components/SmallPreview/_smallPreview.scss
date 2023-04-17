@@ -1,0 +1,32 @@
+.smallpreview-container {
+  display: flex;
+  justify-content: center;
+
+  .smallpreview-item {
+    display: flex;
+    gap: 1em;
+    width: 30%;
+
+    img {
+      width: 25%;
+      height: auto;
+    }
+
+    .smallpreview-text {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        color: hsl(233, 8%, 79%);
+      }
+
+      h5 {
+        font-weight: 800;
+      }
+
+      p {
+        color: hsl(233, 8%, 79%);
+      }
+    }
+  }
+}

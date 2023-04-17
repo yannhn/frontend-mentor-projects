@@ -3,6 +3,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 3em;
 
   h1 {
     display: flex;
@@ -19,6 +20,7 @@ header {
         a {
           text-decoration: none;
           pointer-events: none;
+          color: hsl(236, 13%, 42%);
         }
       }
     }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import MainPreview from "../MainPreview/MainPreview";
 import SmallPreview from "../SmallPreview/SmallPreview";
+import "./_container.scss";
 
 const Container = () => {
   const [sidebarContent, setSidebarContent] = useState([
@@ -56,11 +57,13 @@ const Container = () => {
   ]);
 
   return (
-    <div>
-      <MainPreview />
-      <Sidebar sidebarContent={sidebarContent} />
+    <main>
+      <div className="upper-part">
+        <MainPreview />
+        <Sidebar sidebarContent={sidebarContent} />
+      </div>
       <SmallPreview smallPreviewContent={smallPreviewContent} />
-    </div>
+    </main>
   );
 };
 

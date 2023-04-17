@@ -4,7 +4,7 @@ import "./_header.scss";
 const Header = () => {
   return (
     <header>
-      <h1>W.</h1>
+      <img src="../../../doc/news-homepage-main/assets/images/logo.svg" />
       <nav>
         <ul>
           <li>
