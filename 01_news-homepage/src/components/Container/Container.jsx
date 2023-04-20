@@ -1,68 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import MainPreview from "../MainPreview/MainPreview";
 import SmallPreview from "../SmallPreview/SmallPreview";
 import "./_container.scss";
 
 const Container = () => {
-  const [sidebarContent, setSidebarContent] = useState([
-    {
-      id: 1,
-      title: "Hydrogen VS Electric Cars",
-      body: "Will hydrogen-fueled cars ever catch up to EVs?",
-    },
-    {
-      id: 2,
-      title: "The Downsides of AI Aristry",
-      body: "What are the possible adverse effects of on-demand AI image generation?",
-    },
-    {
-      id: 3,
-      title: "Is VS Funding Drying Up?",
-      body: "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
-    },
-  ]);
+  const [sidebarContent, setSidebarContent] = useState([]);
 
-  const computer =
-    "../../../doc/news-homepage-main/assets/images/image-retro-pcs.jpg";
-  const keyboard =
-    "../../../doc/news-homepage-main/assets/images/image-top-laptops.jpg";
-  const controller =
-    "../../../doc/news-homepage-main/assets/images/image-gaming-growth.jpg";
+  const [smallPreviewContent, setSmallPreviewContent] = useState([]);
 
-  const images = { computer, keyboard, controller };
+  useEffect(() => {
+    fetch("http://localhost:8000/sidebarContent")
+      .then((res) => res.json())
+      .then((data) => setSidebarContent(data));
+  }, []);
 
-  const [smallPreviewContent, setSmallPreviewContent] = useState([
-    {
-      id: 1,
-      number: "01",
-      title: "Reviving Retro PCs",
-      body: "What happens when old PCs are given modern upgrades?",
-      image: images.computer,
-    },
-    {
-      id: 2,
-      number: "02",
-      title: "Top 10 Laptops of 2022",
-      body: "Our best picks for various needs and budgets.",
-      image: images.keyboard,
-    },
-    {
-      id: 3,
-      number: "03",
-      title: "The Growth of Gaming",
-      body: "How the pandemic has sparked fesh opportunities.",
-      image: images.controller,
-    },
-  ]);
+  useEffect(() => {
+    fetch("http://localhost:8000/smallPreviewContent")
+      .then((res) => res.json())
+      .then((data) => setSmallPreviewContent(data));
+  }, []);
 
   return (
     <main>
       <div className="upper-part">
         <MainPreview />
-        <Sidebar sidebarContent={sidebarContent} />
+        {sidebarContent && <Sidebar sidebarContent={sidebarContent} />}
       </div>
-      <SmallPreview smallPreviewContent={smallPreviewContent} />
+      {smallPreviewContent && (
+        <SmallPreview smallPreviewContent={smallPreviewContent} />
+      )}
     </main>
   );
 };
