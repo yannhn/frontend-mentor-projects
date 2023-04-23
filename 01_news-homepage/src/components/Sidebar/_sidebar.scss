@@ -1,27 +1,31 @@
 aside {
   background: hsl(240, 100%, 5%);
-  padding: 0 1em;
-
-  div {
-    border-bottom: 1px solid hsl(36, 100%, 99%);
-    padding: 0.8em 0;
-
-    &:last-child {
-      border: none;
-    }
-  }
+  padding: 0 1rem;
+  max-width: 345px;
+  min-height: 460px;
 
   h3 {
     color: hsl(35, 77%, 62%);
     font-size: 2rem;
   }
+  div {
+    h4,
+    p {
+      color: hsl(36, 100%, 99%);
+    }
 
-  span,
-  p {
-    color: hsl(36, 100%, 99%);
-  }
-
-  span {
-    font-weight: 700;
+    h4 {
+      font-weight: 700;
+      margin: 1.5rem 0 0.4rem;
+    }
+    p {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid hsl(36, 100%, 99%);
+    }
+    &:last-child {
+      p {
+        border-bottom: none;
+      }
+    }
   }
 }

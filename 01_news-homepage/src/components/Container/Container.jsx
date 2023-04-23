@@ -6,7 +6,6 @@ import "./_container.scss";
 
 const Container = () => {
   const [sidebarContent, setSidebarContent] = useState([]);
-
   const [smallPreviewContent, setSmallPreviewContent] = useState([]);
 
   useEffect(() => {
@@ -23,10 +22,10 @@ const Container = () => {
 
   return (
     <main>
-      <div className="upper-part">
+      <section className="upper-part">
         <MainPreview />
         {sidebarContent && <Sidebar sidebarContent={sidebarContent} />}
-      </div>
+      </section>
       {smallPreviewContent && (
         <SmallPreview smallPreviewContent={smallPreviewContent} />
       )}

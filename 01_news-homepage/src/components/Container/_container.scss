@@ -1,7 +1,17 @@
 main {
   .upper-part {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
+    display: grid;
+    margin: 2.5rem auto;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    section {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    aside {
+    }
   }
 }

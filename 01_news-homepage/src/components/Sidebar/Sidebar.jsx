@@ -7,7 +7,7 @@ const Sidebar = ({ sidebarContent }) => {
       <h3>New</h3>
       {sidebarContent.map((content) => (
         <div key={content.id}>
-          <span>{content.title}</span>
+          <h4>{content.title}</h4>
           <p>{content.body}</p>
         </div>
       ))}

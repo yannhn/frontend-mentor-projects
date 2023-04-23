@@ -1,31 +1,36 @@
 .smallpreview-container {
-  display: flex;
-  justify-content: center;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 
   .smallpreview-item {
     display: flex;
-    gap: 1em;
-    width: 30%;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.7rem;
 
     img {
-      width: 25%;
-      height: auto;
+      width: 90px;
+      height: 100px;
     }
 
     .smallpreview-text {
-      display: flex;
-      flex-direction: column;
-
       span {
         color: hsl(233, 8%, 79%);
+        font-size: 1.6rem;
       }
 
       h5 {
         font-weight: 800;
+        font-size: 1rem;
+        margin: 0.4rem 0;
       }
 
       p {
         color: hsl(233, 8%, 79%);
+        font-size: 0.9rem;
+        margin: 0 2rem 1rem 0;
       }
     }
   }
