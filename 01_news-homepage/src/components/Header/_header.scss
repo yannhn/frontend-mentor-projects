@@ -3,24 +3,35 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 
   h1 {
     display: flex;
   }
 
-  nav {
+  .nav {
     ul {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      padding: 0;
-      gap: 2em;
-      li {
-        a {
-          text-decoration: none;
-          pointer-events: none;
-          color: hsl(236, 13%, 42%);
+      display: none;
+    }
+  }
+
+  @media (min-width: 376px) {
+    .hamburgerButton {
+      display: none;
+    }
+    .nav {
+      ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+        gap: 2em;
+        li {
+          a {
+            text-decoration: none;
+            pointer-events: none;
+            color: hsl(236, 13%, 42%);
+          }
         }
       }
     }

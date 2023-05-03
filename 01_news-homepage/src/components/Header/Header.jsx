@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import Hamburger from "../Hamburger/Hamburger";
 import "./_header.scss";
 
 const Header = () => {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen);
+    console.log("TEST");
+  };
+
   return (
     <header>
       <img src="../../../doc/news-homepage-main/assets/images/logo.svg" />
-      <nav>
+      <nav className="nav">
+        <div onClick={toggleHamburger} className="hamburgerButton">
+          <img
+            src="../../../doc/news-homepage-main/assets/images/icon-menu.svg"
+            alt=""
+          />
+        </div>
+
         <ul>
           <li>
             <a href="#">Home</a>
@@ -24,6 +39,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      {hamburgerOpen && <Hamburger toggleHamburger={toggleHamburger} />}
     </header>
   );
 };

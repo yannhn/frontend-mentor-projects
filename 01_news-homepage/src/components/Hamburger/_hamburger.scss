@@ -1,0 +1,50 @@
+@media (min-width: 376px) {
+  .hamburger {
+    display: none;
+  }
+}
+.overlay {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  /* User still can see the content of main page */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hamburger {
+  height: 100%;
+  padding: 1em;
+  position: fixed;
+  width: 75%;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: hsl(36, 100%, 99%);
+  overflow-x: hidden;
+  color: hsl(240, 100%, 5%);
+  transition: 0.5s;
+  .close {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5em;
+    padding-top: 0.5em;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    gap: 2em;
+    margin-right: 2em;
+    margin-left: 0.5em;
+    li {
+      a {
+        text-decoration: none;
+        pointer-events: none;
+        color: hsl(236, 13%, 42%);
+      }
+    }
+  }
+}
