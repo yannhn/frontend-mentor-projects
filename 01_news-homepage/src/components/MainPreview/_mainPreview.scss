@@ -1,20 +1,42 @@
 .main-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
   img {
     width: 100%;
     height: auto;
   }
 
-  button {
-    background: hsl(5, 85%, 63%);
-    color: hsl(36, 100%, 99%);
-    text-transform: uppercase;
-    padding: 0.8rem 1.5rem;
-    outline: none;
-    border: none;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 3px;
-    transition: 0.3s;
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  .main-preview-lower-text {
+    margin: 0.8em 0 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.4em;
+
+    p {
+      color: hsl(236, 13%, 42%);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    button {
+      background: hsl(5, 85%, 63%);
+      color: hsl(36, 100%, 99%);
+      text-transform: uppercase;
+      padding: 1em 3em;
+      outline: none;
+      border: none;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+      transition: 0.3s;
+    }
   }
 }

@@ -1,36 +1,40 @@
 .smallpreview-container {
-  // margin: 3rem auto;
-  // display: grid;
-  // grid-template-columns: 1fr 1fr 1fr;
-  // gap: 2rem;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
   .smallpreview-item {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1.7rem;
 
     img {
       width: 90px;
-      height: 100px;
+      height: 100%;
     }
 
     .smallpreview-text {
+      display: flex;
+      flex-direction: column;
+
       span {
         color: hsl(233, 8%, 79%);
         font-size: 1.6rem;
+        font-weight: 700;
+        // margin-bottom: 0.2rem;
       }
 
       h5 {
-        font-weight: 800;
-        font-size: 1rem;
+        font-weight: 700;
+        font-size: 1.2rem;
         margin: 0.4rem 0;
       }
 
       p {
-        color: hsl(233, 8%, 79%);
-        font-size: 0.9rem;
-        margin: 0 2rem 1rem 0;
+        color: hsl(236, 13%, 42%);
+        font-size: 15px;
+        margin: 0 2rem 0 0;
+        line-height: 1.5;
       }
     }
   }
