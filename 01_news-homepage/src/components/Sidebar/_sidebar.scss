@@ -36,3 +36,49 @@ aside {
     }
   }
 }
+
+@media (min-width: 376px) {
+  aside {
+    padding: 2em 2em 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: flex-start;
+
+    h3 {
+      color: hsl(35, 77%, 62%);
+      font-size: 2.2rem;
+
+      font-weight: 600;
+    }
+    div {
+      padding: 1em 0;
+
+      border-bottom: 1px solid hsl(36, 100%, 99%);
+      h4,
+      p {
+        line-height: 1.8;
+      }
+
+      h4 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: hsl(36, 100%, 99%);
+        margin-bottom: 0;
+        cursor: pointer;
+        &:hover,
+        &:focus {
+          color: hsl(35, 77%, 62%);
+        }
+      }
+      p {
+        font-size: 15px;
+        color: hsl(233, 8%, 79%);
+      }
+      &:last-child {
+        border-bottom: none;
+        padding: 2em 0 0;
+      }
+    }
+  }
+}

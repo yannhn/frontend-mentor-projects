@@ -4,7 +4,16 @@ import "./_mainPreview.scss";
 const MainPreview = () => {
   return (
     <section className="main-preview">
-      <img src="../../../doc/news-homepage-main/assets/images/image-web-3-mobile.jpg" />
+      <img
+        className="main-preview-mobile-img"
+        src="../../../doc/news-homepage-main/assets/images/image-web-3-mobile.jpg"
+      />
+      <div
+        className="main-preview-desktop-img"
+        style={{
+          backgroundImage: `url("../../../doc/news-homepage-main/assets/images/image-web-3-desktop.jpg")`,
+        }}
+      ></div>
       <div className="main-preview-lower">
         <h2>The Bright Future of Web 3.0?</h2>
         <div className="main-preview-lower-text">

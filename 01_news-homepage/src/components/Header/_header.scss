@@ -23,14 +23,21 @@ header {
       ul {
         display: flex;
         flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
         list-style: none;
         padding: 0;
         gap: 2em;
         li {
           a {
             text-decoration: none;
-            pointer-events: none;
+
             color: hsl(236, 13%, 42%);
+            cursor: pointer;
+            &:hover,
+            &:focus {
+              color: hsl(35, 77%, 62%);
+            }
           }
         }
       }

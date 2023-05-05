@@ -48,8 +48,10 @@ const Container = () => {
 
   return (
     <main>
-      <MainPreview />
-      {sidebarContent && <Sidebar sidebarContent={sidebarContent} />}
+      <div className="bigpreview-container">
+        <MainPreview />
+        {sidebarContent && <Sidebar sidebarContent={sidebarContent} />}
+      </div>
       {smallPreviewContent && (
         <SmallPreview smallPreviewContent={smallPreviewContent} />
       )}

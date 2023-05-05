@@ -11,3 +11,9 @@ body {
   font-weight: 400;
   padding: 2em 1em 4em;
 }
+
+@media (min-width: 376px) {
+  body {
+    padding: 6em 8em;
+  }
+}
