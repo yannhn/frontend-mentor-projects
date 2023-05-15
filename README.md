@@ -6,8 +6,8 @@ A constantly updated monorepo in which I collect different projects of the site 
 
 #### 1. news-homepage
 
-**Description:**
+**Description:** The project was about building a simple news homepage with focus on the use of css grid. Built with react in conjunction with vite and scss for styling.
 
-**Tech used:**
+**Tech used:** Vite, React, SCSS, HTML, CSS Grid, Mobile-firstworkflow
 
-**Link to project:**
+[**Link to project**](https://genuine-seahorse-df5d78.netlify.app)
