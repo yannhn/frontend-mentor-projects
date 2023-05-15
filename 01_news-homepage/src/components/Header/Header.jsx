@@ -12,13 +12,10 @@ const Header = () => {
 
   return (
     <header>
-      <img src="../../../doc/news-homepage-main/assets/images/logo.svg" />
+      <img src="/logo.svg" />
       <nav className="nav">
         <div onClick={toggleHamburger} className="hamburgerButton">
-          <img
-            src="../../../doc/news-homepage-main/assets/images/icon-menu.svg"
-            alt=""
-          />
+          <img src="/icon-menu.svg" alt="" />
         </div>
 
         <ul>

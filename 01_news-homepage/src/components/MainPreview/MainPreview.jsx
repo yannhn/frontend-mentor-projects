@@ -4,14 +4,11 @@ import "./_mainPreview.scss";
 const MainPreview = () => {
   return (
     <section className="main-preview">
-      <img
-        className="main-preview-mobile-img"
-        src="../../../doc/news-homepage-main/assets/images/image-web-3-mobile.jpg"
-      />
+      <img className="main-preview-mobile-img" src="/image-web-3-mobile.jpg" />
       <div
         className="main-preview-desktop-img"
         style={{
-          backgroundImage: `url("../../../doc/news-homepage-main/assets/images/image-web-3-desktop.jpg")`,
+          backgroundImage: `url("/image-web-3-desktop.jpg")`,
         }}
       ></div>
       <div className="main-preview-lower">

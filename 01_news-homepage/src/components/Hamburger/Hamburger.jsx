@@ -6,10 +6,7 @@ const Hamburger = ({ toggleHamburger }) => {
     <>
       <nav className="hamburger">
         <div className="close" onClick={toggleHamburger}>
-          <img
-            src="../../../doc/news-homepage-main/assets/images/icon-menu-close.svg"
-            alt=""
-          />
+          <img src="/icon-menu-close.svg" alt="" />
         </div>
         <ul>
           <li>

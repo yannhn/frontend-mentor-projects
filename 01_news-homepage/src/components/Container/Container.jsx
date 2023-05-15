@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import MainPreview from "../MainPreview/MainPreview";
 import SmallPreview from "../SmallPreview/SmallPreview";
@@ -28,21 +28,21 @@ const Container = () => {
       number: "01",
       title: "Reviving Retro PCs",
       body: "What happens when old PCs are given modern upgrades?",
-      image: "../doc/news-homepage-main/assets/images/image-retro-pcs.jpg",
+      image: "image-retro-pcs.jpg",
     },
     {
       id: 2,
       number: "02",
       title: "Top 10 Laptops of 2022",
       body: "Our best picks for various needs and budgets.",
-      image: "../doc/news-homepage-main/assets/images/image-top-laptops.jpg",
+      image: "image-top-laptops.jpg",
     },
     {
       id: 3,
       number: "03",
       title: "The Growth of Gaming",
       body: "How the pandemic has sparked fesh opportunities.",
-      image: "../doc/news-homepage-main/assets/images/image-gaming-growth.jpg",
+      image: "image-gaming-growth.jpg",
     },
   ]);
 
