@@ -27,7 +27,21 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+- Desktop: 1440px
+
+<p float="left">
+  <img src="./solution_img/desktop-view.png" width="450" alt="desktop-view"/>
+
+</p>
+
+- Mobile: 375px
+
+<p float="left">
+  <img src="./solution_img/mobile-first.png" width="150" alt="mobile-first"/>
+  <img src="./solution_img/mobile-second.png" width="150" alt="mobile-second"/>
+  <img src="./solution_img/mobile-third.png" width="150" alt="mobile-third"/> 
+  <img src="./solution_img/mobile-drawer.png" width="150" alt="mobile-drawer"/>
+</p>
 
 ### Links
 
